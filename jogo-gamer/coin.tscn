@@ -2,15 +2,16 @@
 
 [ext_resource type="Script" uid="uid://imo7f5ervgav" path="res://coin.gd" id="1_0t63x"]
 [ext_resource type="Texture2D" uid="uid://biieppu38ebdv" path="res://Base pack/Items/coinGold.png" id="1_d5gmh"]
+[ext_resource type="Texture2D" uid="uid://c11d7owpkobm2" path="res://addons/kenney_particle_pack/dirt_02.png" id="2_v7riw"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_0t63x"]
 particle_flag_disable_z = true
 direction = Vector3(0, -1, 0)
-initial_velocity_min = 80.0
-initial_velocity_max = 150.0
+initial_velocity_min = 60.0
+initial_velocity_max = 120.0
 gravity = Vector3(0, 98, 0)
-scale_min = 2.0
-scale_max = 4.0
+scale_min = 0.29999998
+scale_max = 0.59999996
 color = Color(1, 0.84313726, 0, 1)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0t63x"]
@@ -22,6 +23,8 @@ script = ExtResource("1_0t63x")
 [node name="Particles" type="GPUParticles2D" parent="." unique_id=1013982735]
 position = Vector2(0, 1)
 emitting = false
+amount = 5
+texture = ExtResource("2_v7riw")
 lifetime = 0.4
 one_shot = true
 explosiveness = 1.0
